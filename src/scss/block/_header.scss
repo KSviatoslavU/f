@@ -1,0 +1,112 @@
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d9fff5;
+  justify-content: space-around;
+  height: 88px;
+  background-color: white;
+
+  &__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: $button_color;
+  }
+
+  &__divider {
+    width: 2px;
+    height: 32px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #eaeaea;
+  }
+
+  &__icon {
+    vertical-align: middle;
+  }
+
+  &__button--call,
+  &__button--profile,
+  &__button--chat {
+    display: none;
+  }
+
+  &__divider--tablet {
+    display: none;
+  }
+
+  &__button--burger {
+    order: 1;
+  }
+
+  &__logo {
+    order: 2;
+  }
+
+  &__divider--mobile {
+    order: 3;
+  }
+
+  &__button--repair {
+    order: 4;
+  }
+
+  &__button--checkstatus {
+    order: 5;
+  }
+
+  @media (min-width: 768px) {
+    gap: 15px;
+
+    &__button--call,
+    &__button--profile,
+    &__button--chat {
+      display: block;
+    }
+
+    &__button--burger {
+      order: 1;
+      margin-left: 25px;
+    }
+
+    &__divider--tablet {
+      display: flex;
+      order: 2;
+    }
+
+    &__logo {
+      order: 3;
+    }
+
+    &__button--call {
+      order: 4;
+      margin-left: auto;
+    }
+
+    &__button--chat {
+      order: 5;
+    }
+
+    &__button--profile {
+      order: 6;
+    }
+
+    &__divider--mobile {
+      order: 7;
+    }
+
+    &__button--repair {
+      order: 8;
+    }
+
+    &__button--checkstatus {
+      order: 9;
+      margin-right: 10px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}

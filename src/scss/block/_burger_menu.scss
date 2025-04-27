@@ -1,0 +1,154 @@
+.burger_menu {
+  transform: translate(-320px);
+  width: 320px;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 11;
+  transition: filter 10s, transform 1s;
+
+  @media (min-width: 768px) and (max-width: 1439px) {
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
+      -2px 0px 4px rgba(69, 79, 126, 0.02);
+  }
+
+  @media (min-width: 1440px) {
+    transform: translate(0px);
+  }
+
+  &--show {
+    @media (max-width: 1439px) {
+      transform: translate(0px);
+    }
+  }
+
+  &__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: $button_color;
+    transition: filter 2s;
+  }
+
+  &__header {
+    display: flex;
+    padding: 20px 30px;
+    column-gap: 20px;
+  }
+
+  &__button--search {
+    margin-left: 45px;
+  }
+
+  @media (min-width: 1440px) {
+    &__button--burger {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10px 30px;
+    row-gap: 25px;
+  }
+
+  &__highlights {
+    position: absolute;
+    left: -30px;
+    top: -5px;
+    width: 4px;
+    height: 32px;
+    background-color: $highlight_color;
+    margin-right: 10px;
+    border-radius: 0 5px 5px 0;
+    border: 0px;
+  }
+
+  &__link {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #1b1c21;
+  }
+
+  &__link:active {
+    color: #7e7e82;
+  }
+
+  &__link:hover {
+    opacity: 0.7;
+  }
+
+  &__button:hover {
+    filter: grayscale(50%);
+  }
+
+  &__button:active {
+    filter: contrast(300%);
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-left: 30px;
+    row-gap: 15px;
+  }
+
+  &__button-group {
+    display: flex;
+    column-gap: 15px;
+  }
+
+  &__link--call {
+    letter-spacing: -0.6px;
+    line-height: 36px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: 360px) {
+    &__footer {
+      margin-top: 15px;
+    }
+
+    &__link--call {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__languages {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__link--select {
+    color: #7e7e82;
+  }
+
+  &__icon {
+    vertical-align: middle;
+  }
+
+  @media (min-width: 1440px) {
+    &__link--select {
+      color: #1b1c21;
+    }
+
+    &__link--selectD {
+      color: #7e7e82;
+    }
+
+    &__highlights {
+      top: 45px;
+    }
+  }
+}

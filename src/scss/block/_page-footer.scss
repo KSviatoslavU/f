@@ -1,0 +1,48 @@
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 35px;
+
+  & p {
+    margin-top: 100px;
+    max-width: 330px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #7e7e82;
+    opacity: 0.72;
+  }
+
+  & p:last-child {
+    text-align: right;
+  }
+
+  @media (min-width: 768px) {
+    & p:last-child {
+      max-width: 250px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    & p:last-child {
+      max-width: 400px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 40px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    & p {
+      margin: 0px;
+      margin-bottom: 15px;
+    }
+    & p:last-child {
+      text-align: center;
+      width: 320px;
+    }
+  }
+}

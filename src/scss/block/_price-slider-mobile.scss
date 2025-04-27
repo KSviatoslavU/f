@@ -1,0 +1,18 @@
+.priceSwiper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 200px;
+  background: linear-gradient(
+    to left,
+    #f8f8f8 0.01%,
+    rgba(248, 248, 248, 0) 100%
+  );
+  z-index: 2;
+}
+
+.priceSwiper {
+  height: 250px;
+}

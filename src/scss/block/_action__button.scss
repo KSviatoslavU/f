@@ -1,0 +1,38 @@
+.action {
+  &__button {
+    border: none;
+    background-color: inherit;
+    margin-left: 31px;
+    transition: opacity 0.3s;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-family: 'TTLakes';
+  }
+
+  &__icon {
+    margin-right: 7px;
+  }
+
+  @media (max-width: 767px) {
+    &--visible {
+      display: none;
+    }
+  }
+
+  &__button:hover {
+    opacity: 0.6;
+  }
+
+  &__button:active {
+    opacity: 0.3;
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+}

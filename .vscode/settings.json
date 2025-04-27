@@ -4,7 +4,10 @@
   "workbench.iconTheme": "material-icon-theme",
   "[html][css][scss][javascript]": {
     "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap": "off",
+    "editor.rulers": [1000],
+    "prettier.printWidth": 1000
   },
   "[json]": {
     "editor.tabSize": 2
@@ -12,7 +15,7 @@
   "editor.tabSize": 2,
   "scm.alwaysShowActions": true,
   "editor.formatOnSave": true,
-  "terminal.integrated.defaultProfile.osx": "bash",
+  "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.defaultProfile.linux": "bash",
-  "terminal.integrated.defaultProfile.windows":"bash"
+  "terminal.integrated.defaultProfile.windows": "bash"
 }

@@ -1,17 +1,14 @@
-$bgColor: #24292e;
-$text: #fff;
+@import '~normalize.css';
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
+@import 'src/scss/_variables.scss', 'src/scss/_globals.scss',
+  'src/scss/_fonts.scss', 'src/scss/block/_header.scss',
+  'src/scss/block/_title.scss', 'src/scss/block/_menu.scss',
+  'src/scss/block/_aside.scss', 'src/scss/block/_burger_menu.scss',
+  'src/scss/block/_brand-slider.scss', 'src/scss/block/_action__button.scss',
+  'src/scss/block/_overlay.scss', 'src/scss/block/_brand-slider-mobile.scss',
+  'src/scss/block/_block_header.scss', 'src/scss/block/_equipment-slider.scss',
+  'src/scss/block/_equipment-slider-mobile.scss', 'src/scss/block/_price.scss',
+  'src/scss/block/_offer.scss', 'src/scss/block/_price-slider.scss',
+  'src/scss/block/_price-slider-mobile.scss', 'src/scss/block/_page-footer.scss',
+  'src/scss/block/_modal-feedback.scss', 'src/scss/block/_modal-call.scss',
+  'src/scss/block/_overlay-modal.scss';

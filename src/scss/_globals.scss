@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'TTLakes', 'Times New Roman', sans-serif;
+  background-color: #f8f8f8;
+}
+
+button {
+  cursor: pointer;
+  transition: filter 2s;
+}
+
+button:hover {
+  filter: grayscale(50%);
+}
+
+button:active {
+  filter: contrast(300%);
+}
+
+@media (min-width: 1440px) {
+  .main-content {
+    margin-left: 320px;
+  }
+}
