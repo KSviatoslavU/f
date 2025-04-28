@@ -60,11 +60,17 @@ let headerMessageButton = document.querySelector('[data-header-feedback]')
 let overlayModal = document.querySelector('[data-overlay-modal]')
 
 burgerMessageButton.addEventListener('click', function () {
+  if (modalCall.classList.contains('show_modal')) {
+    modalCall.classList.remove('show_modal')
+  }
   modalFeedback.classList.add('show_modal')
   overlayModal.classList.add('overlay_modal--show')
 })
 
 headerMessageButton.addEventListener('click', function () {
+  if (modalCall.classList.contains('show_modal')) {
+    modalCall.classList.remove('show_modal')
+  }
   modalFeedback.classList.add('show_modal')
   overlayModal.classList.add('overlay_modal--show')
 })
@@ -80,11 +86,17 @@ let closedCall = document.querySelector('[data-modal-closed]')
 let headerCallButton = document.querySelector('[data-header-call]')
 
 burgerCallButton.addEventListener('click', function () {
+  if (modalFeedback.classList.contains('show_modal')) {
+    modalFeedback.classList.remove('show_modal')
+  }
   modalCall.classList.add('show_modal')
   overlayModal.classList.add('overlay_modal--show')
 })
 
 headerCallButton.addEventListener('click', function () {
+  if (modalFeedback.classList.contains('show_modal')) {
+    modalFeedback.classList.remove('show_modal')
+  }
   modalCall.classList.add('show_modal')
   overlayModal.classList.add('overlay_modal--show')
 })
